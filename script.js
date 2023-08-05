@@ -320,6 +320,8 @@ var foodDataSet = [
     }
   ]
 
+
+
   // to list all the foodname
 
   function collectFoodNames(foodDataSet) {
@@ -339,6 +341,9 @@ var foodDataSet = [
   
   console.log("Food Names:");
   console.log(foodNamesArray);
+
+
+
 
   //all the food items with category vegetables
 
@@ -360,6 +365,8 @@ var foodDataSet = [
   
   console.log("Vegetable Food Names:");
   console.log(vegetableFoodNamesArray);
+
+
 
 
   //list all the food items with category fruit
@@ -404,6 +411,9 @@ var foodDataSet = [
   console.log("Protein Food Names:");
   console.log(proteinFoodNamesArray);
 
+
+
+
   //list all the food items with category nuts
 
   function collectnutsFoodNames(foodDataSet) {
@@ -446,6 +456,9 @@ var foodDataSet = [
   console.log("Grains Food Names:");
   console.log(grainsFoodNamesArray);
 
+
+
+
 //list all the food items with category dairy
 
 function collectdairyFoodNames(foodDataSet) {
@@ -467,6 +480,9 @@ const dairyFoodNamesArray = collectdairyFoodNames(foodDataSet);
 console.log("Dairy Food Names:");
 console.log(dairyFoodNamesArray);
 
+
+
+
 //list all the food items with calorie below 100
 
 function collectbelow100calorieFoodNames(foodDataSet) {
@@ -485,8 +501,10 @@ function collectbelow100calorieFoodNames(foodDataSet) {
 
 const below100calorieFoodNamesArray = collectbelow100calorieFoodNames(foodDataSet);
 
-console.log("Below100calorie Food Names:");
+console.log("Below-100-calorie Food Names:");
 console.log(below100calorieFoodNamesArray);
+
+
 
 // list all the food items with calorie above 100
 
@@ -506,8 +524,11 @@ function collectabove100calorieFoodNames(foodDataSet) {
 
 const above100calorieFoodNamesArray = collectabove100calorieFoodNames(foodDataSet);
 
-console.log("Above 100-calorie Food Names:");
+console.log("Above-100-calorie Food Names:");
 console.log(above100calorieFoodNamesArray);
+
+
+
 
 //list all the food items with highest protien content to lowest
 
@@ -525,12 +546,15 @@ function sortFoodByProteinContent(foodDataSet) {
 
 const sortedFoodNamesByProtein = sortFoodByProteinContent(foodDataSet);
 
-console.log("Food Names Sorted by Protein Content (Highest to Lowest):");
+console.log("Food Names of Protein (Highest to Lowest):");
 console.log(sortedFoodNamesByProtein);
+
+
+
 
 //list all the food items with lowest cab content to highest
 
-function sortFoodByCarbohydrateContent(foodDataSet) {
+function sortFoodByCabContent(foodDataSet) {
   
   foodDataSet.sort((a, b) => a.cab - b.cab);
 
@@ -542,8 +566,8 @@ function sortFoodByCarbohydrateContent(foodDataSet) {
   return sortedFoodNames;
 }
 
-const sortedFoodNamesByCarbohydrate = sortFoodByCarbohydrateContent(foodDataSet);
+const sortedFoodNamesByCab = sortFoodByCabContent(foodDataSet);
 
-console.log("Food Names Sorted by Carbohydrate Content (Lowest to Highest):");
-console.log(sortedFoodNamesByCarbohydrate);
+console.log("Food Names of Cab (Lowest to Highest):");
+console.log(sortedFoodNamesByCab);
 
